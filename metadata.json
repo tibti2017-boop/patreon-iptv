@@ -1,0 +1,6 @@
+{
+  "name": "Patreon IPTV USA 4K",
+  "description": "Best Patreon IPTV Subscription - 25,000+ Live Channels (NFL, NBA, MLB, NHL, PPV) & 60,000+ VOD Movies & Series in 4K Ultra HD.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://patreoniptv.com/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+
+    <!-- TV Channel Logos -->
+    <image:image>
+      <image:loc>https://patreoniptv.com/channels/canal-plus.svg</image:loc>
+      <image:title>CANAL+ 4K Live Stream Logo PATREON IPTV</image:title>
+      <image:caption>Watch CANAL+ 4K Ultra HD Live Channels with PATREON IPTV subscription</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/channels/dazn.svg</image:loc>
+      <image:title>DAZN 1 &amp; 2 Sports Live Logo PATREON IPTV</image:title>
+      <image:caption>Stream DAZN Live Football and Sports in 60FPS 4K with PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/channels/espn.svg</image:loc>
+      <image:title>ESPN 4K Sports Channel Logo PATREON IPTV</image:title>
+      <image:caption>ESPN HD &amp; 4K Live US Sports Channels PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/channels/nfl-network.svg</image:loc>
+      <image:title>NFL Network RedZone 4K Logo PATREON IPTV</image:title>
+      <image:caption>NFL Sunday Ticket &amp; RedZone Live Streaming PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/channels/hbo.png</image:loc>
+      <image:title>HBO Max Cinema 4K Logo PATREON IPTV</image:title>
+      <image:caption>HBO Max Cinema Movies &amp; Original Series 4K PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/channels/bbc-one.png</image:loc>
+      <image:title>BBC One UK Live 4K Logo PATREON IPTV</image:title>
+      <image:caption>BBC One HD &amp; UK Live Premium Channels PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/channels/eurosport.svg</image:loc>
+      <image:title>Eurosport 1 &amp; 2 4K Logo PATREON IPTV</image:title>
+      <image:caption>Eurosport Live International Matches PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/channels/showtime.png</image:loc>
+      <image:title>Showtime Cinema 4K Logo PATREON IPTV</image:title>
+      <image:caption>Showtime Movies &amp; Series 4K PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/channels/tf1.png</image:loc>
+      <image:title>TF1 France 4K Logo PATREON IPTV</image:title>
+      <image:caption>TF1 Direct HD France Channels PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/channels/itv1.png</image:loc>
+      <image:title>ITV 1 UK HD Logo PATREON IPTV</image:title>
+      <image:caption>ITV1 Live UK Television PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/channels/rtl.svg</image:loc>
+      <image:title>RTL Germany 4K Logo PATREON IPTV</image:title>
+      <image:caption>RTL HD German Premium Channels PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/channels/euronews.svg</image:loc>
+      <image:title>Euronews 24/7 News Logo PATREON IPTV</image:title>
+      <image:caption>Euronews International Live News PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/channels/ard1.png</image:loc>
+      <image:title>ARD 1 Germany Channel Logo PATREON IPTV</image:title>
+      <image:caption>ARD 1 German Television Live PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/channels/das-erste.svg</image:loc>
+      <image:title>Das Erste HD Germany Logo PATREON IPTV</image:title>
+      <image:caption>Das Erste Live Channels PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/channels/dr1.svg</image:loc>
+      <image:title>DR 1 Denmark TV Logo PATREON IPTV</image:title>
+      <image:caption>DR 1 Danish TV Channels PATREON IPTV</image:caption>
+    </image:image>
+
+    <!-- Sports Event Posters -->
+    <image:image>
+      <image:loc>https://patreoniptv.com/sports/champions-league.jpg</image:loc>
+      <image:title>UEFA Champions League Live 4K Match Poster PATREON IPTV</image:title>
+      <image:caption>Watch UEFA Champions League Football Matches in Live 4K Ultra HD on PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/sports/europa-league.jpg</image:loc>
+      <image:title>UEFA Europa League Live 4K Stream PATREON IPTV</image:title>
+      <image:caption>UEFA Europa League Games Live in 60 FPS 4K on PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/sports/world-cup-2026.jpg</image:loc>
+      <image:title>2026 FIFA World Cup Live Streaming 4K Poster PATREON IPTV</image:title>
+      <image:caption>Watch 2026 FIFA World Cup Matches Live Stream on PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/sports/ligue-1.jpg</image:loc>
+      <image:title>Ligue 1 Football Direct 4K Multi-Cam Poster PATREON IPTV</image:title>
+      <image:caption>Ligue 1 Live Football Streaming 4K HDR on PATREON IPTV</image:caption>
+    </image:image>
+
+    <!-- VOD Catalogue Posters -->
+    <image:image>
+      <image:loc>https://patreoniptv.com/posters/squid-game.jpg</image:loc>
+      <image:title>Squid Game Season 2 4K VOD Poster PATREON IPTV</image:title>
+      <image:caption>Watch Squid Game Season 2 in 4K HDR on PATREON IPTV VOD</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/posters/the-last-of-us.jpg</image:loc>
+      <image:title>The Last of Us Season 2 4K HDR VOD Poster PATREON IPTV</image:title>
+      <image:caption>The Last of Us 4K Streaming Movies and TV Series PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/posters/house-of-dragon.jpg</image:loc>
+      <image:title>House of the Dragon 4K VOD Series Poster PATREON IPTV</image:title>
+      <image:caption>House of the Dragon Full Series 4K Ultra HD PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/posters/severance.jpg</image:loc>
+      <image:title>Severance Season 2 4K VOD Poster PATREON IPTV</image:title>
+      <image:caption>Severance Season 2 Streaming VOD 4K PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/posters/stranger-things.jpg</image:loc>
+      <image:title>Stranger Things 5 4K VOD Series Poster PATREON IPTV</image:title>
+      <image:caption>Stranger Things 5 Full Season VOD 4K Ultra HD PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/posters/the-bear.jpg</image:loc>
+      <image:title>The Bear Season 3 4K VOD Series Poster PATREON IPTV</image:title>
+      <image:caption>The Bear FX Hulu Series 4K Stream PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/posters/wednesday.jpg</image:loc>
+      <image:title>Wednesday Season 2 4K VOD Poster PATREON IPTV</image:title>
+      <image:caption>Wednesday Netflix Series 4K VOD PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/posters/black-rabbit.jpg</image:loc>
+      <image:title>Black Rabbit 4K Movie VOD Poster PATREON IPTV</image:title>
+      <image:caption>Black Rabbit Movie Stream 4K HDR PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/posters/the-pitt.jpg</image:loc>
+      <image:title>The Pitt 4K VOD Series Poster PATREON IPTV</image:title>
+      <image:caption>The Pitt Medical Drama Series 4K PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/posters/adolescence.jpg</image:loc>
+      <image:title>Adolescence 4K Movie Poster PATREON IPTV</image:title>
+      <image:caption>Adolescence Movie VOD 4K Stream PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/posters/nobody-wants-this.jpg</image:loc>
+      <image:title>Nobody Wants This 4K VOD Series Poster PATREON IPTV</image:title>
+      <image:caption>Nobody Wants This Rom-Com Series 4K VOD PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/posters/breaking-bad.jpg</image:loc>
+      <image:title>Breaking Bad Complete Series 4K Poster PATREON IPTV</image:title>
+      <image:caption>Breaking Bad All Seasons 4K Ultra HD PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/posters/game-of-thrones.jpg</image:loc>
+      <image:title>Game of Thrones Complete Series 4K Poster PATREON IPTV</image:title>
+      <image:caption>Game of Thrones All Seasons 4K HDR VOD PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/posters/la-casa-de-papel.jpg</image:loc>
+      <image:title>Money Heist La Casa de Papel 4K Poster PATREON IPTV</image:title>
+      <image:caption>Money Heist La Casa de Papel 4K VOD Stream PATREON IPTV</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://patreoniptv.com/posters/the-witcher.jpg</image:loc>
+      <image:title>The Witcher 4K Series VOD Poster PATREON IPTV</image:title>
+      <image:caption>The Witcher Full Series 4K Ultra HD PATREON IPTV</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Reseller Program Page -->
+  <url>
+    <loc>https://patreoniptv.com/#reseller</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://patreoniptv.com/#reseller-program</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 30 SEO Blog & Guide Articles -->
+  <url>
+    <loc>https://patreoniptv.com/#blog</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url><loc>https://patreoniptv.com/#best-iptv-service-provider-2026-guide</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#top-10-iptv-apps-firestick-smart-tv-2026</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#iptv-smarters-pro-installation-guide</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#stop-iptv-buffering-anti-freeze-guide</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#watch-champions-league-world-cup-4k</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#tivimate-premium-setup-guide-settings</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#ibo-player-samsung-lg-smart-tv-setup</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#iptv-vs-cable-tv-vs-satellite-cost-comparison</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#best-vpn-for-iptv-streaming-2026</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#xciptv-player-setup-guide-android-tv</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#watch-nfl-nba-mlb-ppv-in-60fps</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#fixing-iptv-error-codes-authorization-failed</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#smart-iptv-siptv-installation-playlist-upload</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#gse-smart-iptv-setup-ios-iphone-apple-tv</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#stream-iptv-on-mag-box-portal-setup</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#best-iptv-apps-for-windows-pc-mac-2026</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#what-is-xtream-codes-api-how-it-works</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#formuler-z10-z11-pro-max-mytvonline3-guide</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#best-iptv-service-uk-usa-canada-europe-2026</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#how-to-record-live-iptv-streams-firestick</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#iptv-epg-guide-troubleshooting-missing-data</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#best-4k-smart-tvs-for-iptv-streaming-2026</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#ss-iptv-setup-guide-lg-sony-smart-tv</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#m3u-playlists-vs-xtream-codes-api-comparison</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#watch-formula-1-motogp-live-stream-4k</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#iptv-catch-up-tv-7-day-replay-guide</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#how-to-setup-parental-controls-adult-channel-lock</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#iptv-speed-requirements-4k-streaming-mbps</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#net-iptv-app-installation-samsung-lg-smart-tv</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://patreoniptv.com/#how-to-resell-iptv-subscriptions-become-reseller-2026</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+</urlset>

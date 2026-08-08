@@ -1,0 +1,29 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Serve existing files and directories directly
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Explicit rules for sitemap.xml and robots.txt
+  RewriteRule ^sitemap\.xml$ sitemap.xml [L,T=application/xml]
+  RewriteRule ^sitemap$ sitemap.xml [L,T=application/xml]
+  RewriteRule ^robots\.txt$ robots.txt [L,T=text/plain]
+
+  # Single Page Application fallback to index.html
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(xml|txt|html)$">
+    Header set X-Robots-Tag "all, index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType application/xml .xml
+  AddType text/plain .txt
+  AddType text/html .html
+</IfModule>

@@ -1,0 +1,161 @@
+import React, { useState } from 'react';
+import { VOD_CATALOGUE } from '../data/mockData';
+import { VodItem } from '../types';
+import { Play, Star, Film, Search, Info } from 'lucide-react';
+import { handlePosterImageError } from '../utils/imageUtils';
+
+interface VodShowcaseProps {
+  onOpenCatalogue: () => void;
+}
+
+export const VodShowcase: React.FC<VodShowcaseProps> = ({ onOpenCatalogue }) => {
+  const [selectedVod, setSelectedVod] = useState<VodItem | null>(null);
+
+  return (
+    <section id="vod" className="py-20 bg-zinc-950 border-t border-zinc-900 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs font-extrabold uppercase tracking-widest mb-3">
+            <Film className="w-3.5 h-3.5" />
+            MOVIES & TV SERIES VOD
+          </div>
+          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight mb-4">
+            60,000+ <span className="text-orange-500">Movies & TV Series</span> in 4K HDR
+          </h2>
+          <p className="text-zinc-400 text-sm sm:text-base font-medium">
+            Access the latest hits from Netflix, Prime Video, Disney+, Apple TV+, HBO Max, and Hulu in 4K Ultra HD with Dolby Digital audio.
+          </p>
+        </div>
+
+        {/* Grid of Posters */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
+          {VOD_CATALOGUE.map((item) => (
+            <div
+              key={item.id}
+              onClick={() => setSelectedVod(item)}
+              className="group relative bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-orange-500/50 transition-all duration-300 hover:-translate-y-1.5 cursor-pointer shadow-lg"
+            >
+              {/* Poster Image */}
+              <div
+                itemScope
+                itemType="https://schema.org/ImageObject"
+                className="aspect-[2/3] w-full overflow-hidden relative"
+              >
+                <img
+                  src={item.poster}
+                  alt={`${item.title} (${item.year}) ${item.quality} Movie & TV Series Poster - PATREON IPTV VOD`}
+                  title={`Watch ${item.title} (${item.year}) in ${item.quality} HDR VOD on PATREON IPTV`}
+                  itemProp="contentUrl"
+                  loading="lazy"
+                  decoding="async"
+                  width="200"
+                  height="300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  onError={(e) => handlePosterImageError(e, item.title)}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+
+                {/* Quality Badge */}
+                <div className="absolute top-2 left-2 bg-black/70 backdrop-blur-md text-amber-400 border border-amber-500/30 font-black text-[10px] px-2 py-0.5 rounded shadow">
+                  {item.quality}
+                </div>
+
+                {/* Rating */}
+                <div className="absolute top-2 right-2 bg-black/80 text-white font-bold text-[10px] px-1.5 py-0.5 rounded flex items-center gap-1">
+                  <Star className="w-3 h-3 text-amber-400 fill-amber-400" />
+                  {item.rating}
+                </div>
+
+                {/* Play Hover Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40 backdrop-blur-[2px]">
+                  <div className="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center shadow-lg shadow-orange-500/40 group-hover:scale-110 transition-transform">
+                    <Play className="w-6 h-6 fill-current ml-0.5" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Poster Content */}
+              <div className="p-3">
+                <h3 className="font-bold text-white text-xs sm:text-sm truncate group-hover:text-orange-400 transition-colors">
+                  {item.title}
+                </h3>
+                <div className="flex items-center justify-between text-[11px] text-zinc-400 mt-1">
+                  <span>{item.genre}</span>
+                  <span>{item.year}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom CTA to Open Searchable Catalogue */}
+        <div className="mt-12 text-center">
+          <button
+            onClick={onOpenCatalogue}
+            className="px-8 py-3.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-white font-bold text-xs sm:text-sm uppercase tracking-wider border border-zinc-700 hover:border-orange-500/50 shadow-xl transition-all inline-flex items-center gap-2.5"
+          >
+            <Search className="w-4 h-4 text-orange-400" />
+            <span>BROWSE FULL VOD CATALOGUE (60,000+ TITLES)</span>
+          </button>
+        </div>
+      </div>
+
+      {/* Selected VOD Details Modal */}
+      {selectedVod && (
+        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl relative animate-in fade-in zoom-in-95 duration-200">
+            <div className="relative aspect-video w-full overflow-hidden">
+              <img
+                src={selectedVod.poster}
+                alt={`${selectedVod.title} (${selectedVod.year}) ${selectedVod.quality} Full HD Movie Poster - PATREON IPTV`}
+                title={`${selectedVod.title} (${selectedVod.year}) - Stream VOD in 4K HDR on PATREON IPTV`}
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover"
+                onError={(e) => handlePosterImageError(e, selectedVod.title)}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent"></div>
+              <button
+                onClick={() => setSelectedVod(null)}
+                className="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/70 text-zinc-300 hover:text-white flex items-center justify-center font-extrabold text-sm"
+              >
+                ✕
+              </button>
+              <div className="absolute bottom-4 left-4 right-4">
+                <div className="inline-block px-2 py-0.5 rounded bg-orange-500 text-white font-black text-[10px] uppercase tracking-wider mb-1">
+                  {selectedVod.quality} • {selectedVod.genre}
+                </div>
+                <h3 className="text-2xl font-black text-white">{selectedVod.title}</h3>
+              </div>
+            </div>
+
+            <div className="p-6 space-y-4">
+              <div className="flex items-center justify-between text-xs font-bold text-zinc-400 border-b border-zinc-800 pb-3">
+                <span className="flex items-center gap-1 text-amber-400">
+                  <Star className="w-4 h-4 fill-amber-400" />
+                  {selectedVod.rating} / 10
+                </span>
+                <span>Year: {selectedVod.year}</span>
+                <span className="uppercase text-orange-400 font-extrabold">Included in PATREON IPTV</span>
+              </div>
+
+              <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed">
+                {selectedVod.synopsis}
+              </p>
+
+              <div className="pt-2 flex gap-3">
+                <button
+                  onClick={() => setSelectedVod(null)}
+                  className="flex-1 py-3 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-extrabold text-xs uppercase tracking-wider shadow-lg shadow-orange-500/20"
+                >
+                  Stream Now on PATREON IPTV
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </section>
+  );
+};

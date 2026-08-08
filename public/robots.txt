@@ -1,0 +1,23 @@
+# www.robotstxt.org/
+
+User-agent: *
+Allow: /
+Allow: /channels/
+Allow: /sports/
+Allow: /posters/
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.svg
+Allow: /*.webp
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://patreoniptv.com/sitemap.xml

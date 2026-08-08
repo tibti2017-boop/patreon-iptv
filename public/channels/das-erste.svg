@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 90" width="350" height="90">
+  <circle cx="45" cy="45" r="38" fill="#002266"/>
+  <path d="M38 22 L52 22 L52 68 L38 68 Z M32 34 L45 22 L52 22 L52 34 Z" fill="#001133"/>
+  <path d="M38 20 L50 20 L50 66 L38 66 Z" fill="#FFFFFF"/>
+  <text x="100" y="58" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="42" fill="#002266">Das Erste</text>
+</svg>
