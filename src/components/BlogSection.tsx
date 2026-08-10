@@ -1,4 +1,5 @@
 import React from 'react';
+import { handlePosterImageError } from '../utils/imageUtils';
 import { BookOpen, Clock, ArrowRight, Sparkles, HelpCircle, Layers } from 'lucide-react';
 import { BLOG_POSTS, BlogPost } from '../data/blogPosts';
 
@@ -55,11 +56,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBlog }) => {
                     alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     referrerPolicy="no-referrer"
-                    onError={(e) => {
-                      const target = e.currentTarget;
-                      target.onerror = null;
-                      target.src = '/sports/champions-league.jpg';
-                    }}
+                    onError={(e) => handlePosterImageError(e, post.title)}
                   />
                   <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-zinc-950/85 backdrop-blur-md border border-zinc-700/80 text-[10px] font-black uppercase text-cyan-400">
                     {post.category}

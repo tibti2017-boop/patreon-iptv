@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, BookOpen, Search, Clock, ArrowRight, ChevronLeft, MessageCircle, Zap, Tag, Share2, CheckCircle2, Copy, Check } from 'lucide-react';
 import { BLOG_POSTS, BlogPost } from '../data/blogPosts';
+import { handlePosterImageError } from '../utils/imageUtils';
 
 export { BLOG_POSTS, type BlogPost };
 
@@ -104,11 +105,7 @@ export const BlogModal: React.FC<BlogModalProps> = ({
                   alt={selectedPost.title}
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    const target = e.currentTarget;
-                    target.onerror = null;
-                    target.src = '/sports/champions-league.jpg';
-                  }}
+                  onError={(e) => handlePosterImageError(e, selectedPost.title)}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent"></div>
               </div>
@@ -215,11 +212,7 @@ export const BlogModal: React.FC<BlogModalProps> = ({
                             alt={post.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             referrerPolicy="no-referrer"
-                            onError={(e) => {
-                              const target = e.currentTarget;
-                              target.onerror = null;
-                              target.src = '/sports/champions-league.jpg';
-                            }}
+                            onError={(e) => handlePosterImageError(e, post.title)}
                           />
                           <div className="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-zinc-950/80 backdrop-blur-md border border-zinc-700/80 text-[10px] font-extrabold uppercase text-cyan-400">
                             {post.category}

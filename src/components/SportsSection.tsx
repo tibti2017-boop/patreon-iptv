@@ -80,11 +80,7 @@ export const SportsSection: React.FC<SportsSectionProps> = ({ onOpenOrder }) => 
               src="/sports/champions-league.jpg"
               alt="Premium Live Sports Access 4K Stadium"
               referrerPolicy="no-referrer"
-              onError={(e) => {
-                const target = e.currentTarget;
-                target.onerror = null;
-                target.src = '/sports/europa-league.jpg';
-              }}
+              onError={(e) => handlePosterImageError(e, 'UEFA Champions League 4K')}
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-40"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/80 to-transparent" />

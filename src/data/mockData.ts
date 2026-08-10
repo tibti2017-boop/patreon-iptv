@@ -265,7 +265,7 @@ export const REVIEWS_LIST: Review[] = [
     rating: 5,
     comment: 'PATREON IPTV is incredible! NFL RedZone and Sunday games stream in full 60fps 4K without a single lag or buffering event.',
     date: '2 days ago',
-    avatar: '/sports/champions-league.jpg'
+    avatar: 'https://ui-avatars.com/api/?name=Michael+T&background=f97316&color=fff&bold=true'
   },
   {
     id: '2',
@@ -274,7 +274,7 @@ export const REVIEWS_LIST: Review[] = [
     rating: 5,
     comment: 'The best IPTV service for Firestick in the US! Setup took 2 minutes and support helped me on WhatsApp instantly.',
     date: '3 days ago',
-    avatar: '/sports/champions-league.jpg'
+    avatar: 'https://ui-avatars.com/api/?name=Sarah+K&background=3b82f6&color=fff&bold=true'
   },
   {
     id: '3',
@@ -283,7 +283,7 @@ export const REVIEWS_LIST: Review[] = [
     rating: 5,
     comment: 'The VOD catalog is massive. HBO, Showtime, and all latest movies are in crisp 4K HDR. Worth every penny!',
     date: '1 week ago',
-    avatar: '/sports/champions-league.jpg'
+    avatar: 'https://ui-avatars.com/api/?name=David+R&background=10b981&color=fff&bold=true'
   },
   {
     id: '4',
@@ -292,7 +292,7 @@ export const REVIEWS_LIST: Review[] = [
     rating: 5,
     comment: 'Switched from cable and saved over $1,200 a year! PATREON IPTV gives me all local news, NBA League Pass & UFC PPVs.',
     date: '2 weeks ago',
-    avatar: '/sports/champions-league.jpg'
+    avatar: 'https://ui-avatars.com/api/?name=James+L&background=8b5cf6&color=fff&bold=true'
   },
   {
     id: '5',
@@ -301,7 +301,7 @@ export const REVIEWS_LIST: Review[] = [
     rating: 5,
     comment: 'Super stable even during peak Sunday night football. No freezing at all. High quality streams!',
     date: '3 weeks ago',
-    avatar: '/sports/champions-league.jpg'
+    avatar: 'https://ui-avatars.com/api/?name=Amanda+B&background=ec4899&color=fff&bold=true'
   },
   {
     id: '6',
@@ -310,7 +310,7 @@ export const REVIEWS_LIST: Review[] = [
     rating: 5,
     comment: 'Got the Lifetime VIP package for my whole home. Easy configuration on Apple TV & Android Box.',
     date: '1 month ago',
-    avatar: '/sports/champions-league.jpg'
+    avatar: 'https://ui-avatars.com/api/?name=Robert+M&background=f59e0b&color=fff&bold=true'
   }
 ];
 
