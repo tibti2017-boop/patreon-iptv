@@ -265,7 +265,7 @@ export const REVIEWS_LIST: Review[] = [
     rating: 5,
     comment: 'PATREON IPTV is incredible! NFL RedZone and Sunday games stream in full 60fps 4K without a single lag or buffering event.',
     date: '2 days ago',
-    avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80'
+    avatar: '/sports/champions-league.jpg'
   },
   {
     id: '2',
@@ -274,7 +274,7 @@ export const REVIEWS_LIST: Review[] = [
     rating: 5,
     comment: 'The best IPTV service for Firestick in the US! Setup took 2 minutes and support helped me on WhatsApp instantly.',
     date: '3 days ago',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80'
+    avatar: '/sports/champions-league.jpg'
   },
   {
     id: '3',
@@ -283,7 +283,7 @@ export const REVIEWS_LIST: Review[] = [
     rating: 5,
     comment: 'The VOD catalog is massive. HBO, Showtime, and all latest movies are in crisp 4K HDR. Worth every penny!',
     date: '1 week ago',
-    avatar: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=150&auto=format&fit=crop&q=80'
+    avatar: '/sports/champions-league.jpg'
   },
   {
     id: '4',
@@ -292,7 +292,7 @@ export const REVIEWS_LIST: Review[] = [
     rating: 5,
     comment: 'Switched from cable and saved over $1,200 a year! PATREON IPTV gives me all local news, NBA League Pass & UFC PPVs.',
     date: '2 weeks ago',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80'
+    avatar: '/sports/champions-league.jpg'
   },
   {
     id: '5',
@@ -301,7 +301,7 @@ export const REVIEWS_LIST: Review[] = [
     rating: 5,
     comment: 'Super stable even during peak Sunday night football. No freezing at all. High quality streams!',
     date: '3 weeks ago',
-    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80'
+    avatar: '/sports/champions-league.jpg'
   },
   {
     id: '6',
@@ -310,7 +310,7 @@ export const REVIEWS_LIST: Review[] = [
     rating: 5,
     comment: 'Got the Lifetime VIP package for my whole home. Easy configuration on Apple TV & Android Box.',
     date: '1 month ago',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80'
+    avatar: '/sports/champions-league.jpg'
   }
 ];
 

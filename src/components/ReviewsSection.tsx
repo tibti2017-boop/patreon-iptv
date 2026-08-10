@@ -51,11 +51,15 @@ export const ReviewsSection: React.FC = () => {
                   title={`${rev.name} (${rev.location}) - Verified Subscriber`}
                   loading="lazy"
                   decoding="async"
+                  referrerPolicy="no-referrer"
                   width="40"
                   height="40"
                   className="w-10 h-10 rounded-full object-cover border border-orange-500/30"
                   onError={(e) => {
-                    e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(rev.name)}&background=f97316&color=fff&bold=true`;
+                    const target = e.currentTarget;
+                    target.onerror = null;
+                    target.referrerPolicy = "no-referrer";
+                    target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(rev.name)}&background=f97316&color=fff&bold=true`;
                   }}
                 />
                 <div>

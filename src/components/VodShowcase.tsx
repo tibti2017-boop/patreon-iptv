@@ -49,6 +49,7 @@ export const VodShowcase: React.FC<VodShowcaseProps> = ({ onOpenCatalogue }) => 
                   itemProp="contentUrl"
                   loading="lazy"
                   decoding="async"
+                  referrerPolicy="no-referrer"
                   width="200"
                   height="300"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -112,6 +113,7 @@ export const VodShowcase: React.FC<VodShowcaseProps> = ({ onOpenCatalogue }) => 
                 title={`${selectedVod.title} (${selectedVod.year}) - Stream VOD in 4K HDR on PATREON IPTV`}
                 loading="lazy"
                 decoding="async"
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
                 onError={(e) => handlePosterImageError(e, selectedVod.title)}
               />

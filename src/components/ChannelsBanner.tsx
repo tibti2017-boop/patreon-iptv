@@ -72,6 +72,7 @@ export const ChannelsBanner: React.FC = () => {
                   itemProp="contentUrl"
                   loading="lazy"
                   decoding="async"
+                  referrerPolicy="no-referrer"
                   width="48"
                   height="40"
                   className="max-h-full max-w-full object-contain filter drop-shadow"

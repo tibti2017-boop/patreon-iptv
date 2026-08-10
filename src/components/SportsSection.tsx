@@ -77,8 +77,14 @@ export const SportsSection: React.FC<SportsSectionProps> = ({ onOpenOrder }) => 
         <div className="mb-12 relative rounded-3xl overflow-hidden border border-orange-500/30 bg-zinc-900 shadow-2xl group cursor-pointer" onClick={onOpenOrder}>
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1600&q=80"
+              src="/sports/champions-league.jpg"
               alt="Premium Live Sports Access 4K Stadium"
+              referrerPolicy="no-referrer"
+              onError={(e) => {
+                const target = e.currentTarget;
+                target.onerror = null;
+                target.src = '/sports/europa-league.jpg';
+              }}
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-40"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/80 to-transparent" />

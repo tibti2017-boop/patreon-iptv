@@ -12,24 +12,39 @@ async function startServer() {
   if (process.env.NODE_ENV !== 'production') {
     const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
-      server: { middlewareMode: true },
-      appType: 'spa',
+      server: {
+        middlewareMode: true,
+        hmr: process.env.DISABLE_HMR !== 'true',
+      },
+      appType: 'custom',
     });
     
     // Middleware for DEV mode SEO & static files from public/
     app.use((req, res, next) => {
       res.setHeader('X-Robots-Tag', 'all, index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
-      const url = req.url?.split('?')[0] || '';
-      
-      if (url === '/sitemap.xml' || url === '/sitemap') {
+      next();
+    });
+
+    // Serve static files from public/
+    app.use(express.static(publicPath));
+
+    // Handle HTML routes with Vite transformIndexHtml
+    app.use(async (req, res, next) => {
+      const url = req.originalUrl || req.url || '/';
+      // Skip assets, node_modules, and files with extensions (except .html)
+      if (url.includes('/@') || url.includes('/node_modules/') || url.includes('/src/') || (url.includes('.') && !url.endsWith('.html'))) {
+        return next();
+      }
+
+      const cleanUrl = url.split('?')[0] || '/';
+      if (cleanUrl === '/sitemap.xml' || cleanUrl === '/sitemap') {
         const filePath = path.join(publicPath, 'sitemap.xml');
         if (fs.existsSync(filePath)) {
           res.setHeader('Content-Type', 'application/xml; charset=utf-8');
           return res.send(fs.readFileSync(filePath, 'utf-8'));
         }
       }
-      
-      if (url === '/robots.txt') {
+      if (cleanUrl === '/robots.txt') {
         const filePath = path.join(publicPath, 'robots.txt');
         if (fs.existsSync(filePath)) {
           res.setHeader('Content-Type', 'text/plain; charset=utf-8');
@@ -37,8 +52,8 @@ async function startServer() {
         }
       }
 
-      if (url.startsWith('/google') && url.endsWith('.html')) {
-        const fileName = url.slice(1);
+      if (cleanUrl.startsWith('/google') && cleanUrl.endsWith('.html')) {
+        const fileName = cleanUrl.slice(1);
         const filePath = path.join(publicPath, fileName);
         if (fs.existsSync(filePath)) {
           res.setHeader('Content-Type', 'text/html; charset=utf-8');
@@ -46,10 +61,20 @@ async function startServer() {
         }
       }
 
-      next();
+      try {
+        const indexPath = path.resolve(process.cwd(), 'index.html');
+        if (!fs.existsSync(indexPath)) {
+          return next();
+        }
+        let template = fs.readFileSync(indexPath, 'utf-8');
+        template = await vite.transformIndexHtml(cleanUrl, template);
+        res.status(200).set({ 'Content-Type': 'text/html; charset=utf-8' }).end(template);
+      } catch (e) {
+        vite.ssrFixStacktrace(e as Error);
+        next(e);
+      }
     });
 
-    app.use(express.static(publicPath));
     app.use(vite.middlewares);
   } else {
     // Production Mode

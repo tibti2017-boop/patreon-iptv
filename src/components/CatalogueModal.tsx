@@ -138,6 +138,7 @@ export const CatalogueModal: React.FC<CatalogueModalProps> = ({ isOpen, onClose 
                             itemProp="contentUrl"
                             loading="lazy"
                             decoding="async"
+                            referrerPolicy="no-referrer"
                             className="max-h-full max-w-full object-contain"
                             onError={(e) => handleChannelImageError(e, ch.name)}
                           />
@@ -171,6 +172,7 @@ export const CatalogueModal: React.FC<CatalogueModalProps> = ({ isOpen, onClose 
                       itemProp="contentUrl"
                       loading="lazy"
                       decoding="async"
+                      referrerPolicy="no-referrer"
                       className="w-full h-full object-cover"
                       onError={(e) => handlePosterImageError(e, item.title)}
                     />

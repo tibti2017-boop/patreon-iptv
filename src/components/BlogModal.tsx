@@ -105,7 +105,9 @@ export const BlogModal: React.FC<BlogModalProps> = ({
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80';
+                    const target = e.currentTarget;
+                    target.onerror = null;
+                    target.src = '/sports/champions-league.jpg';
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent"></div>
@@ -214,7 +216,9 @@ export const BlogModal: React.FC<BlogModalProps> = ({
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             referrerPolicy="no-referrer"
                             onError={(e) => {
-                              (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80';
+                              const target = e.currentTarget;
+                              target.onerror = null;
+                              target.src = '/sports/champions-league.jpg';
                             }}
                           />
                           <div className="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-zinc-950/80 backdrop-blur-md border border-zinc-700/80 text-[10px] font-extrabold uppercase text-cyan-400">

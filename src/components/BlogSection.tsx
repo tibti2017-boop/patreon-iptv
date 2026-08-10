@@ -56,7 +56,9 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBlog }) => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     referrerPolicy="no-referrer"
                     onError={(e) => {
-                      (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80';
+                      const target = e.currentTarget;
+                      target.onerror = null;
+                      target.src = '/sports/champions-league.jpg';
                     }}
                   />
                   <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-zinc-950/85 backdrop-blur-md border border-zinc-700/80 text-[10px] font-black uppercase text-cyan-400">
