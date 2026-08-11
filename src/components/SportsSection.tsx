@@ -74,14 +74,14 @@ export const SportsSection: React.FC<SportsSectionProps> = ({ onOpenOrder }) => 
         </div>
 
         {/* Featured Live Sports Banner Card */}
-        <div className="mb-12 relative rounded-3xl overflow-hidden border border-orange-500/30 bg-zinc-900 shadow-2xl group cursor-pointer" onClick={onOpenOrder}>
+        <div className="mb-12 relative rounded-3xl overflow-hidden border border-orange-500/30 bg-zinc-900 shadow-2xl">
           <div className="absolute inset-0 z-0">
             <img
               src="/sports/champions-league.jpg"
               alt="Premium Live Sports Access 4K Stadium"
               referrerPolicy="no-referrer"
               onError={(e) => handlePosterImageError(e, 'UEFA Champions League 4K')}
-              className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-40"
+              className="w-full h-full object-cover object-center opacity-40 pointer-events-none"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/80 to-transparent" />
             <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent" />
@@ -108,11 +108,8 @@ export const SportsSection: React.FC<SportsSectionProps> = ({ onOpenOrder }) => 
 
             <div className="pt-2 flex flex-wrap items-center gap-4">
               <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onOpenOrder();
-                }}
-                className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-400 hover:to-amber-500 text-white font-extrabold text-xs uppercase tracking-wider shadow-xl shadow-orange-950/60 flex items-center gap-2 group/btn"
+                onClick={onOpenOrder}
+                className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-400 hover:to-amber-500 text-white font-extrabold text-xs uppercase tracking-wider shadow-xl shadow-orange-950/60 flex items-center gap-2"
               >
                 <Play className="w-4 h-4 fill-current" />
                 <span>START WATCHING LIVE SPORTS NOW</span>
@@ -121,13 +118,12 @@ export const SportsSection: React.FC<SportsSectionProps> = ({ onOpenOrder }) => 
           </div>
         </div>
 
-        {/* 4 Featured Sports Posters Grid */}
+        {/* 4 Featured Sports Posters Grid - Static Images */}
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
           {featuredPosters.map((poster, index) => (
             <div
               key={index}
-              onClick={onOpenOrder}
-              className="group relative rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 hover:border-orange-500/80 transition-all duration-300 cursor-pointer shadow-xl hover:shadow-orange-500/20 flex flex-col"
+              className="relative rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 shadow-xl flex flex-col select-none"
             >
               {/* Poster Image Container */}
               <div
@@ -145,7 +141,7 @@ export const SportsSection: React.FC<SportsSectionProps> = ({ onOpenOrder }) => 
                   referrerPolicy="no-referrer"
                   width="300"
                   height="450"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover pointer-events-none"
                   onError={(e) => {
                     const target = e.currentTarget;
                     if (target.src !== poster.fallback && poster.fallback) {
@@ -157,26 +153,19 @@ export const SportsSection: React.FC<SportsSectionProps> = ({ onOpenOrder }) => 
                 />
 
                 {/* Dark Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/30 to-transparent pointer-events-none" />
 
                 {/* Live Badge */}
-                <div className="absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-red-600/90 text-white text-[10px] font-black uppercase tracking-wider backdrop-blur-md shadow-lg z-10">
+                <div className="absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-red-600/90 text-white text-[10px] font-black uppercase tracking-wider backdrop-blur-md shadow-lg z-10 pointer-events-none">
                   <Radio className="w-3 h-3 animate-pulse" />
                   <span>{poster.badge}</span>
-                </div>
-
-                {/* Hover Play Button Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40 backdrop-blur-[2px] z-20">
-                  <div className="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center shadow-2xl scale-90 group-hover:scale-100 transition-transform">
-                    <Play className="w-6 h-6 fill-white ml-0.5" />
-                  </div>
                 </div>
               </div>
 
               {/* Poster Info Footer */}
               <div className="p-4 bg-zinc-900/95 border-t border-zinc-800/80 flex-1 flex flex-col justify-between space-y-2">
                 <div>
-                  <h3 className="text-sm sm:text-base font-extrabold text-white group-hover:text-orange-400 transition-colors line-clamp-1">
+                  <h3 className="text-sm sm:text-base font-extrabold text-white line-clamp-1">
                     {poster.title}
                   </h3>
                   <p className="text-[11px] font-medium text-zinc-400 mt-0.5">
@@ -188,8 +177,8 @@ export const SportsSection: React.FC<SportsSectionProps> = ({ onOpenOrder }) => 
                     <Flame className="w-3.5 h-3.5 fill-emerald-400" />
                     Live 4K 60FPS
                   </span>
-                  <span className="text-white group-hover:text-orange-400 flex items-center gap-1 text-[10px] uppercase font-black">
-                    Watch Live <Play className="w-2.5 h-2.5 fill-current ml-0.5" />
+                  <span className="text-zinc-400 flex items-center gap-1 text-[10px] uppercase font-bold">
+                    PATREON 4K
                   </span>
                 </div>
               </div>

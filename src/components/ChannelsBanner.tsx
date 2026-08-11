@@ -61,10 +61,10 @@ export const ChannelsBanner: React.FC = () => {
               key={idx}
               itemScope
               itemType="https://schema.org/ImageObject"
-              className="group relative p-3 rounded-xl bg-zinc-900/90 border border-zinc-800/80 hover:border-orange-500/50 hover:bg-zinc-900 transition-all duration-300 shadow-lg flex items-center gap-3"
+              className="relative p-3 rounded-xl bg-zinc-900/90 border border-zinc-800/80 shadow-lg flex items-center gap-3 select-none"
             >
               {/* Logo Box */}
-              <div className="w-12 h-10 rounded-lg bg-zinc-950 p-1.5 border border-zinc-800 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform overflow-hidden">
+              <div className="w-12 h-10 rounded-lg bg-zinc-950 p-1.5 border border-zinc-800 flex items-center justify-center shrink-0 overflow-hidden">
                 <img
                   src={ch.logo}
                   alt={`${ch.name} 4K Live TV Channel Logo - PATREON IPTV Stream`}
@@ -75,18 +75,18 @@ export const ChannelsBanner: React.FC = () => {
                   referrerPolicy="no-referrer"
                   width="48"
                   height="40"
-                  className="max-h-full max-w-full object-contain filter drop-shadow"
+                  className="max-h-full max-w-full object-contain filter drop-shadow pointer-events-none"
                   onError={(e) => handleChannelImageError(e, ch.name)}
                 />
               </div>
 
               {/* Title & Badge */}
               <div className="min-w-0 flex-1">
-                <div itemProp="name" className="text-xs font-extrabold text-white group-hover:text-orange-400 transition-colors truncate">
+                <div itemProp="name" className="text-xs font-extrabold text-white truncate">
                   {ch.name}
                 </div>
                 <div className="flex items-center gap-1.5 mt-0.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
                   <span className="text-[9px] font-black tracking-wider text-zinc-400 uppercase truncate">
                     {ch.badge}
                   </span>

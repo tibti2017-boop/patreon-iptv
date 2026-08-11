@@ -163,8 +163,8 @@ export const CatalogueModal: React.FC<CatalogueModalProps> = ({ isOpen, onClose 
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
               {filteredVod.map((item) => (
-                <div key={item.id} className="group cursor-pointer">
-                  <div itemScope itemType="https://schema.org/ImageObject" className="aspect-[2/3] w-full relative overflow-hidden rounded-2xl bg-zinc-800 shadow-lg group-hover:shadow-2xl transition-all duration-300">
+                <div key={item.id} className="select-none">
+                  <div itemScope itemType="https://schema.org/ImageObject" className="aspect-[2/3] w-full relative overflow-hidden rounded-2xl bg-zinc-800 shadow-lg">
                     <img
                       src={item.poster}
                       alt={`${item.title} (${item.year}) ${item.quality} Movie & TV Series Poster - PATREON IPTV`}
@@ -173,16 +173,16 @@ export const CatalogueModal: React.FC<CatalogueModalProps> = ({ isOpen, onClose 
                       loading="lazy"
                       decoding="async"
                       referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover rounded-2xl pointer-events-none"
                       onError={(e) => handlePosterImageError(e, item.title)}
                     />
                     {/* 4K Top-Left Badge */}
-                    <div className="absolute top-2.5 left-2.5 bg-black/70 backdrop-blur-md text-white font-black text-[9px] sm:text-[10px] px-2 py-0.5 rounded-md tracking-wider">
+                    <div className="absolute top-2.5 left-2.5 bg-black/70 backdrop-blur-md text-white font-black text-[9px] sm:text-[10px] px-2 py-0.5 rounded-md tracking-wider pointer-events-none">
                       4K
                     </div>
                   </div>
                   <div className="mt-2 px-0.5">
-                    <h4 className="text-xs font-bold text-white truncate group-hover:text-orange-400 transition-colors">{item.title}</h4>
+                    <h4 className="text-xs font-bold text-white truncate">{item.title}</h4>
                     <div className="text-[10px] text-zinc-400 flex items-center justify-between mt-0.5">
                       <span className="truncate max-w-[70%]">{item.genre}</span>
                       <span className="text-orange-400 font-bold">★ {item.rating}</span>
