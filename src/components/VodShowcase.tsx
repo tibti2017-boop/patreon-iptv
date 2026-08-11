@@ -28,66 +28,64 @@ export const VodShowcase: React.FC<VodShowcaseProps> = ({ onOpenCatalogue }) => 
           </p>
         </div>
 
-        {/* Grid of Posters */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
-          {VOD_CATALOGUE.map((item) => (
-            <div
-              key={item.id}
-              onClick={() => setSelectedVod(item)}
-              className="group relative bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-orange-500/50 transition-all duration-300 hover:-translate-y-1.5 cursor-pointer shadow-lg"
-            >
-              {/* Poster Image */}
+        {/* Clean Showcase Container matching user sample image */}
+        <div className="bg-white/95 text-slate-900 rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-200/80 mb-10">
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-orange-500 animate-pulse"></span>
+                Trending Movies & 4K Series Showcase
+              </h3>
+              <p className="text-slate-500 text-xs sm:text-sm font-medium mt-0.5">
+                Swipe or scroll to explore 60,000+ top rated titles
+              </p>
+            </div>
+            
+            <div className="flex items-center gap-2">
+              <span className="px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 font-extrabold text-xs">
+                4K Ultra HD
+              </span>
+            </div>
+          </div>
+
+          {/* Horizontal Poster Slider matching user sample layout */}
+          <div className="flex items-center gap-4 overflow-x-auto pb-4 pt-1 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-slate-300 scrollbar-track-transparent">
+            {VOD_CATALOGUE.map((item) => (
               <div
-                itemScope
-                itemType="https://schema.org/ImageObject"
-                className="aspect-[2/3] w-full overflow-hidden relative"
+                key={item.id}
+                onClick={() => setSelectedVod(item)}
+                className="flex-none w-36 sm:w-44 md:w-48 snap-start cursor-pointer group"
               >
-                <img
-                  src={item.poster}
-                  alt={`${item.title} (${item.year}) ${item.quality} Movie & TV Series Poster - PATREON IPTV VOD`}
-                  title={`Watch ${item.title} (${item.year}) in ${item.quality} HDR VOD on PATREON IPTV`}
-                  itemProp="contentUrl"
-                  loading="lazy"
-                  decoding="async"
-                  referrerPolicy="no-referrer"
-                  width="200"
-                  height="300"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  onError={(e) => handlePosterImageError(e, item.title)}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-
-                {/* Quality Badge */}
-                <div className="absolute top-2 left-2 bg-black/70 backdrop-blur-md text-amber-400 border border-amber-500/30 font-black text-[10px] px-2 py-0.5 rounded shadow">
-                  {item.quality}
+                {/* Clean Poster Card */}
+                <div className="aspect-[2/3] w-full rounded-2xl overflow-hidden bg-slate-200 shadow-md group-hover:shadow-xl transition-all duration-300 relative">
+                  <img
+                    src={item.poster}
+                    alt={`${item.title} (${item.year}) Poster - PATREON IPTV`}
+                    title={`${item.title} - PATREON IPTV`}
+                    loading="lazy"
+                    decoding="async"
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-2xl"
+                    onError={(e) => handlePosterImageError(e, item.title)}
+                  />
+                  {/* Subtle 4K Badge */}
+                  <div className="absolute top-2.5 left-2.5 bg-black/70 backdrop-blur-md text-white font-black text-[9px] sm:text-[10px] px-2 py-0.5 rounded-md tracking-wider">
+                    4K
+                  </div>
                 </div>
-
-                {/* Rating */}
-                <div className="absolute top-2 right-2 bg-black/80 text-white font-bold text-[10px] px-1.5 py-0.5 rounded flex items-center gap-1">
-                  <Star className="w-3 h-3 text-amber-400 fill-amber-400" />
-                  {item.rating}
-                </div>
-
-                {/* Play Hover Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40 backdrop-blur-[2px]">
-                  <div className="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center shadow-lg shadow-orange-500/40 group-hover:scale-110 transition-transform">
-                    <Play className="w-6 h-6 fill-current ml-0.5" />
+                {/* Poster Title */}
+                <div className="mt-2.5 px-0.5">
+                  <h4 className="font-bold text-slate-900 text-xs sm:text-sm truncate group-hover:text-orange-600 transition-colors">
+                    {item.title}
+                  </h4>
+                  <div className="flex items-center justify-between text-[11px] text-slate-500 font-semibold mt-0.5">
+                    <span>{item.genre}</span>
+                    <span className="text-orange-600 font-bold">★ {item.rating}</span>
                   </div>
                 </div>
               </div>
-
-              {/* Poster Content */}
-              <div className="p-3">
-                <h3 className="font-bold text-white text-xs sm:text-sm truncate group-hover:text-orange-400 transition-colors">
-                  {item.title}
-                </h3>
-                <div className="flex items-center justify-between text-[11px] text-zinc-400 mt-1">
-                  <span>{item.genre}</span>
-                  <span>{item.year}</span>
-                </div>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         {/* Bottom CTA to Open Searchable Catalogue */}

@@ -73,169 +73,235 @@ export const BASE_PLANS: SubscriptionPlan[] = [
 
 export const VOD_CATALOGUE: VodItem[] = [
   {
+    id: 'st-denis-medical',
+    title: 'St. Denis Medical',
+    type: 'series',
+    genre: 'Comedy / Medical',
+    poster: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&auto=format&fit=crop&q=80',
+    rating: '8.2',
+    year: '2024',
+    quality: '4K HDR',
+    synopsis: 'A mockumentary comedy following the dedicated doctors and nurses at an underfunded Oregon hospital.'
+  },
+  {
+    id: 'ambulance',
+    title: 'Ambulance',
+    type: 'movie',
+    genre: 'Action / Thriller',
+    poster: 'https://images.unsplash.com/photo-1587745416684-47953f16f02f?w=600&auto=format&fit=crop&q=80',
+    rating: '7.8',
+    year: '2022',
+    quality: '4K Ultra',
+    synopsis: 'Two robbers hijack an ambulance after their bank heist goes wrong in high-octane Los Angeles.'
+  },
+  {
+    id: 'emergency',
+    title: 'Emergency!',
+    type: 'series',
+    genre: 'Drama / Action',
+    poster: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&auto=format&fit=crop&q=80',
+    rating: '8.1',
+    year: '2024',
+    quality: '4K HDR',
+    synopsis: 'First responders face life-and-death crises on the frontlines of emergency medical rescue.'
+  },
+  {
+    id: 'twisters',
+    title: 'Twisters',
+    type: 'movie',
+    genre: 'Action / Adventure',
+    poster: 'https://images.unsplash.com/photo-1527482797697-8795b05a13fe?w=600&auto=format&fit=crop&q=80',
+    rating: '7.6',
+    year: '2024',
+    quality: '4K Ultra',
+    synopsis: 'Storm chasers test an experimental tornado tracking system in Oklahoma.'
+  },
+  {
+    id: 'furious-7',
+    title: 'Furious 7',
+    type: 'movie',
+    genre: 'Action / Crime',
+    poster: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&auto=format&fit=crop&q=80',
+    rating: '8.5',
+    year: '2023',
+    quality: '4K Ultra',
+    synopsis: 'Deckard Shaw seeks revenge against Dominic Toretto and his crew.'
+  },
+  {
+    id: 'madagascar-2',
+    title: 'Madagascar 2',
+    type: 'movie',
+    genre: 'Animation / Family',
+    poster: 'https://images.unsplash.com/photo-1534567153574-2b12153a87f0?w=600&auto=format&fit=crop&q=80',
+    rating: '8.0',
+    year: '2022',
+    quality: '4K HDR',
+    synopsis: 'The New York zoo animals crash land in the African wilderness and discover their roots.'
+  },
+  {
     id: 'adolescence',
     title: 'Adolescence',
     type: 'series',
     genre: 'Crime / Drama',
-    poster: '/posters/adolescence.jpg',
+    poster: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop&q=80',
     rating: '8.4',
     year: '2025',
     quality: '4K HDR',
-    synopsis: 'A gripping 4-part British crime drama filmed in real-time, following a 13-year-old boy arrested and charged with the murder of a female classmate.'
+    synopsis: 'A gripping 4-part British crime drama filmed in real-time, following a 13-year-old boy arrested.'
   },
   {
     id: 'black-rabbit',
     title: 'Black Rabbit',
     type: 'series',
     genre: 'Crime / Drama',
-    poster: '/posters/black-rabbit.jpg',
+    poster: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&auto=format&fit=crop&q=80',
     rating: '8.3',
     year: '2025',
     quality: '4K HDR',
-    synopsis: 'The owner of a NYC hotspot allows his chaotic brother back into his life, opening the door to escalating dangers and underground crime.'
+    synopsis: 'The owner of a NYC hotspot allows his chaotic brother back into his life, opening the door to underground crime.'
   },
   {
     id: 'breaking-bad',
     title: 'Breaking Bad',
     type: 'series',
     genre: 'Crime / Drama',
-    poster: '/posters/breaking-bad.jpg',
+    poster: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&auto=format&fit=crop&q=80',
     rating: '9.5',
     year: '2022',
     quality: '4K Ultra',
-    synopsis: 'A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing methamphetamine to secure his family\'s future.'
+    synopsis: 'A high school chemistry teacher diagnosed with lung cancer turns to manufacturing methamphetamine.'
   },
   {
     id: 'game-of-thrones',
     title: 'Game of Thrones',
     type: 'series',
     genre: 'Fantasy / Drama',
-    poster: '/posters/game-of-thrones.jpg',
+    poster: 'https://images.unsplash.com/photo-1514539079130-25950c84af65?w=600&auto=format&fit=crop&q=80',
     rating: '9.2',
     year: '2021',
     quality: '4K HDR',
-    synopsis: 'Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.'
+    synopsis: 'Nine noble families fight for control over Westeros while an ancient enemy returns.'
   },
   {
     id: 'house-of-dragon',
     title: 'House of the Dragon',
     type: 'series',
     genre: 'Fantasy / Drama',
-    poster: '/posters/house-of-dragon.jpg',
+    poster: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=600&auto=format&fit=crop&q=80',
     rating: '8.4',
     year: '2024',
     quality: '4K HDR',
-    synopsis: 'The story of House Targaryen 200 years before the events of Game of Thrones, as the Dance of the Dragons civil war tears Westeros apart.'
+    synopsis: 'The story of House Targaryen 200 years before the events of Game of Thrones.'
   },
   {
     id: 'la-casa-de-papel',
     title: 'La Casa de Papel (Money Heist)',
     type: 'series',
     genre: 'Action / Crime',
-    poster: '/posters/la-casa-de-papel.jpg',
+    poster: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&auto=format&fit=crop&q=80',
     rating: '8.2',
     year: '2023',
     quality: '4K HDR',
-    synopsis: 'An unusual group of robbers attempt to carry out the most perfect heist in Spanish history - stealing 2.4 billion euros from the Royal Mint.'
+    synopsis: 'An unusual group of robbers attempt to carry out the most perfect heist in Spanish history.'
   },
   {
     id: 'nobody-wants-this',
     title: 'Nobody Wants This',
     type: 'series',
     genre: 'Comedy / Romance',
-    poster: '/posters/nobody-wants-this.jpg',
+    poster: 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&auto=format&fit=crop&q=80',
     rating: '8.1',
     year: '2024',
     quality: '4K HDR',
-    synopsis: 'An agnostic podcast host and an unconventional rabbi fall in love, navigating their contrasting worldviews and outspoken families.'
+    synopsis: 'An agnostic podcast host and an unconventional rabbi fall in love.'
   },
   {
     id: 'severance',
     title: 'Severance',
     type: 'series',
     genre: 'Sci-Fi / Thriller',
-    poster: '/posters/severance.jpg',
+    poster: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&auto=format&fit=crop&q=80',
     rating: '8.7',
     year: '2025',
     quality: '4K HDR',
-    synopsis: 'Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives.'
+    synopsis: 'Mark leads a team of office workers whose memories have been surgically divided.'
   },
   {
     id: 'squid-game',
     title: 'Squid Game',
     type: 'series',
     genre: 'Thriller / Drama',
-    poster: '/posters/squid-game.jpg',
+    poster: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&auto=format&fit=crop&q=80',
     rating: '8.0',
     year: '2024',
     quality: '4K HDR',
-    synopsis: 'Hundreds of cash-strapped players accept a strange invitation to compete in children\'s games for a tempting prize with deadly high stakes.'
+    synopsis: 'Hundreds of cash-strapped players accept an invitation to compete in children games for cash.'
   },
   {
     id: 'stranger-things',
     title: 'Stranger Things',
     type: 'series',
     genre: 'Sci-Fi / Horror',
-    poster: '/posters/stranger-things.jpg',
+    poster: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=600&auto=format&fit=crop&q=80',
     rating: '8.7',
     year: '2025',
     quality: '4K HDR',
-    synopsis: 'When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.'
+    synopsis: 'When a young boy vanishes, a small town uncovers a mystery involving secret experiments.'
   },
   {
     id: 'the-bear',
     title: 'The Bear',
     type: 'series',
     genre: 'Drama / Comedy',
-    poster: '/posters/the-bear.jpg',
+    poster: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop&q=80',
     rating: '8.6',
     year: '2024',
     quality: '4K Ultra',
-    synopsis: 'A young fine-dining chef comes home to Chicago to run his family Italian beef sandwich shop after a heartbreaking death.'
+    synopsis: 'A young fine-dining chef comes home to Chicago to run his family Italian beef sandwich shop.'
   },
   {
     id: 'the-last-of-us',
     title: 'The Last of Us',
     type: 'series',
     genre: 'Drama / Sci-Fi',
-    poster: '/posters/the-last-of-us.jpg',
+    poster: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&auto=format&fit=crop&q=80',
     rating: '8.8',
     year: '2024',
     quality: '4K HDR',
-    synopsis: 'After a global pandemic destroys civilization, a hardened survivor takes charge of a 14-year-old girl who may be humanity\'s last hope.'
+    synopsis: 'After a global pandemic destroys civilization, a hardened survivor takes charge of a young girl.'
   },
   {
     id: 'the-pitt',
     title: 'The Pitt',
     type: 'series',
     genre: 'Medical / Drama',
-    poster: '/posters/the-pitt.jpg',
+    poster: 'https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600&auto=format&fit=crop&q=80',
     rating: '8.5',
     year: '2025',
     quality: '4K Ultra',
-    synopsis: 'A realistic look at the front-line challenges facing healthcare workers in contemporary Pittsburgh, Pennsylvania.'
+    synopsis: 'A realistic look at the front-line challenges facing healthcare workers in contemporary Pittsburgh.'
   },
   {
     id: 'the-witcher',
     title: 'The Witcher',
     type: 'series',
     genre: 'Fantasy / Action',
-    poster: '/posters/the-witcher.jpg',
+    poster: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&auto=format&fit=crop&q=80',
     rating: '8.2',
     year: '2023',
     quality: '4K Ultra',
-    synopsis: 'Geralt of Rivia, a mutated monster hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.'
+    synopsis: 'Geralt of Rivia, a mutated monster hunter for hire, journeys toward his destiny in a turbulent world.'
   },
   {
     id: 'wednesday',
     title: 'Wednesday',
     type: 'series',
     genre: 'Comedy / Mystery',
-    poster: '/posters/wednesday.jpg',
+    poster: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=600&auto=format&fit=crop&q=80',
     rating: '8.1',
     year: '2023',
     quality: '4K HDR',
-    synopsis: 'Smart, sarcastic and a little dead inside, Wednesday Addams investigates a murder spree while making new friends and foes at Nevermore Academy.'
+    synopsis: 'Wednesday Addams investigates a murder spree while making new friends and foes at Nevermore Academy.'
   }
 ];
 
