@@ -11,8 +11,8 @@ export const SportsSection: React.FC<SportsSectionProps> = ({ onOpenOrder }) => 
     {
       title: 'UEFA Champions League',
       subtitle: 'Europe\'s Premier Club Tournament',
-      image: '/sports/champions-league.jpg',
-      fallback: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=800&auto=format&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&auto=format&fit=crop&q=80',
+      fallback: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&auto=format&fit=crop&q=80',
       badge: 'LIVE 4K ULTRA HD',
       channels: 'beIN SPORTS 1-3 / Canal+ 4K',
       tag: 'CHAMPIONS LEAGUE'
@@ -20,8 +20,8 @@ export const SportsSection: React.FC<SportsSectionProps> = ({ onOpenOrder }) => 
     {
       title: 'UEFA Europa League',
       subtitle: 'Thursday Night European Drama',
-      image: '/sports/europa-league.jpg',
-      fallback: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&auto=format&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&auto=format&fit=crop&q=80',
+      fallback: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&auto=format&fit=crop&q=80',
       badge: 'LIVE 4K ULTRA HD',
       channels: 'beIN SPORTS / Canal+ Foot',
       tag: 'EUROPA LEAGUE'
@@ -29,8 +29,8 @@ export const SportsSection: React.FC<SportsSectionProps> = ({ onOpenOrder }) => 
     {
       title: '2026 FIFA World Cup',
       subtitle: 'The Ultimate Global Football Stage',
-      image: '/sports/world-cup-2026.jpg',
-      fallback: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&auto=format&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=600&auto=format&fit=crop&q=80',
+      fallback: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=600&auto=format&fit=crop&q=80',
       badge: 'EXCLUSIVE 60 FPS',
       channels: 'TF1 4K / beIN 4K / FOX Sports',
       tag: 'WORLD CUP 2026'
@@ -38,8 +38,8 @@ export const SportsSection: React.FC<SportsSectionProps> = ({ onOpenOrder }) => 
     {
       title: 'Ligue 1 McDonald\'s',
       subtitle: 'French Top Tier League Matches',
-      image: '/sports/ligue-1.jpg',
-      fallback: 'https://images.unsplash.com/photo-1518091043644-c1d4457512c6?w=800&auto=format&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1518091043644-c1d4457512c6?w=600&auto=format&fit=crop&q=80',
+      fallback: 'https://images.unsplash.com/photo-1518091043644-c1d4457512c6?w=600&auto=format&fit=crop&q=80',
       badge: 'LIVE 4K MULTI-CAM',
       channels: 'DAZN 1-4 / beIN SPORTS FR',
       tag: 'LIGUE 1 4K'
@@ -77,7 +77,7 @@ export const SportsSection: React.FC<SportsSectionProps> = ({ onOpenOrder }) => 
         <div className="mb-12 relative rounded-3xl overflow-hidden border border-orange-500/30 bg-zinc-900 shadow-2xl">
           <div className="absolute inset-0 z-0">
             <img
-              src="/sports/champions-league.jpg"
+              src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1200&auto=format&fit=crop&q=80"
               alt="Premium Live Sports Access 4K Stadium"
               referrerPolicy="no-referrer"
               onError={(e) => handlePosterImageError(e, 'UEFA Champions League 4K')}

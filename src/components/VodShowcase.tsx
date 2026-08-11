@@ -58,6 +58,8 @@ export const VodShowcase: React.FC<VodShowcaseProps> = ({ onOpenCatalogue }) => 
                     src={item.poster}
                     alt={`${item.title} (${item.year}) Poster - PATREON IPTV`}
                     title={`${item.title} - PATREON IPTV`}
+                    width="200"
+                    height="300"
                     loading="lazy"
                     decoding="async"
                     referrerPolicy="no-referrer"
